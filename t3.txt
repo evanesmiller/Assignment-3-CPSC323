@@ -1,0 +1,49 @@
+"Test Case 3"
+#
+integer n, i, j, sum, product, count;
+boolean found;
+sum = 0;
+product = 1;
+count = 0;
+found = false;
+get(n);
+
+i = 1;
+while (i < n) {
+    j = 1;
+    while (j <= i) {
+        if (j < 3) {
+            sum = sum + j;
+            count = count + 1;
+        }
+        else
+            product = product * j;
+        fi
+        j = j + 1;
+    }
+    
+    if (i == 5) {
+        found = true;
+        put(sum);
+    }
+    fi
+    
+    if (i > 7)
+        if (product > 100) {
+            put(product);
+            product = 1;
+        }
+        fi
+    fi
+    
+    i = i + 1;
+}
+
+put(count);
+put(sum);
+if (found == true)
+    put(1);
+else
+    put(0);
+fi
+#

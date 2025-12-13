@@ -1,0 +1,8 @@
+"Test Case 1"
+#
+integer x, y, result;
+get(x);
+get(y);
+result = x + y * 2;
+put(result);
+#

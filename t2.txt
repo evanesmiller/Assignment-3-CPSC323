@@ -1,0 +1,18 @@
+"Test Case 2"
+#
+integer i, max, sum, even;
+sum = 0;
+even = 0;
+i = 1;
+get(max);
+while (i <= max) {
+    if (i == i / 2 * 2)
+        even = even + 1;
+    else
+        sum = sum + i;
+    fi
+    i = i + 1;
+}
+put(sum);
+put(even);
+#
